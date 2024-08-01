@@ -46,7 +46,7 @@ const LogInForm = ({ onLogin }) => {
     try {
       const response = await axios.post('https://syoft.dev/Api/userlogin/api/userlogin', formData);
    console.log('response',response);
-   if(response.data.message==='User found'){
+   if(response.data.msg==='User found'){
 
      // Assuming successful login
      localStorage.setItem('user', JSON.stringify(response.data));
